@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Météo France</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Météo du jour</h1>
+    <p id="localisation">Détection de votre position...</p>
+    
+    <input type="text" id="ville" placeholder="Ou chercher une ville">
+    <button onclick="chercherVille()">Rechercher</button>
+
+    <div id="resultat" style="display:none;">
+      <h2 id="nomVille"></h2>
+      <img id="icone" src="" alt="icone meteo">
+      <p id="temp"></p>
+      <p id="description"></p>
+      <p id="details"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
