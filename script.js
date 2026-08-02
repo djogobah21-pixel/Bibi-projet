@@ -1,4 +1,4 @@
-const API_KEY = "COLLE_TA_CLE_ICI"; // Va sur openweathermap.org pour l'avoir gratuitement
+const API_KEY = "405a5aa5e4385bc0c3bd4320037b684e"; // Va sur openweathermap.org pour l'avoir gratuitement
 
 // Au démarrage
 window.onload = () => {
