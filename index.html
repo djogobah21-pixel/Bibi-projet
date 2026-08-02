@@ -3,35 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculatrice</title>
+  <title>Météo France</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculatrice">
-    <input type="text" id="ecran" disabled>
-    <div class="boutons">
-      <button onclick="effacer()">C</button>
-      <button onclick="ajouter('/')">/</button>
-      <button onclick="ajouter('*')">*</button>
-      <button onclick="supprimer()">←</button>
-      
-      <button onclick="ajouter('7')">7</button>
-      <button onclick="ajouter('8')">8</button>
-      <button onclick="ajouter('9')">9</button>
-      <button onclick="ajouter('-')">-</button>
-      
-      <button onclick="ajouter('4')">4</button>
-      <button onclick="ajouter('5')">5</button>
-      <button onclick="ajouter('6')">6</button>
-      <button onclick="ajouter('+')">+</button>
-      
-      <button onclick="ajouter('1')">1</button>
-      <button onclick="ajouter('2')">2</button>
-      <button onclick="ajouter('3')">3</button>
-      <button onclick="calculer()" class="egal">=</button>
-      
-      <button onclick="ajouter('0')" class="zero">0</button>
-      <button onclick="ajouter('.')">.</button>
+  <div class="container">
+    <h1>🌤️ Météo du jour</h1>
+    <p id="localisation">Détection de votre position...</p>
+    
+    <input type="text" id="ville" placeholder="Ou chercher une ville">
+    <button onclick="chercherVille()">Rechercher</button>
+
+    <div id="resultat" style="display:none;">
+      <h2 id="nomVille"></h2>
+      <img id="icone" src="" alt="icone meteo">
+      <p id="temp"></p>
+      <p id="description"></p>
+      <p id="details"></p>
     </div>
   </div>
   <script src="script.js"></script>
