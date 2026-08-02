@@ -1,0 +1,21 @@
+{
+  "name": "MaMétéo France",
+  "short_name": "MaMétéo",
+  "description": "Météo pour la France",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#2193b0",
+  "theme_color": "#2193b0",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png", 
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
